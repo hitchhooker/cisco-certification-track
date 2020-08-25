@@ -1,0 +1,949 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cisco Certification Track</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <style>
+            body {
+                font-family: prometo, sans-serif;
+                font-style: normal;
+                font-weight: 200;
+            }
+            .engineering,
+            .software
+            {
+                color:#324456;
+                background-color: #e5f4fb;
+                margin-bottom: 20px;
+                padding: 5px;   
+                /* filter:  drop-shadow(2px 2px 3px #324456); */
+            }
+            .software {
+                margin-bottom: 18px !important;
+            }
+
+            .column {
+                padding-bottom: 0px;
+                margin: 0;
+            }
+            .columns:not(:last-child) {
+                margin-bottom:0px;
+            }
+
+            .columns:last-child {
+                margin-bottom: 0px;
+            }
+            
+            .entrycolumn {
+                margin-bottom: 12px;
+            }
+        
+
+            .ccnacolumn, .entrycolumn {
+                padding-top: 0px;
+            }
+
+            .topic {
+                min-height: 100px;
+                min-width: 120px;
+                margin-top:10px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                /*
+                filter: drop-shadow(2px 2px 2px #324456);
+                */
+                color:white;
+            }
+
+            .incoming {
+                font-size: 9px;                     
+            }
+
+            .topic:hover {
+                filter: /* drop-shadow(2px 2px 2px #324456) */ brightness(110%);
+            }
+        
+            div.associate.cc-heading {
+                min-height: 125px;
+            }   
+            
+            .cc-heading:hover {
+                
+                filter: /* drop-shadow(1px 0px 1px #5c7fa1) */ brightness(105%);
+            }
+
+            .associate.topic {
+                background-color: #82c579;
+            }
+            .entry.topic {
+                background-color: #457c90;
+                
+            }
+            
+            .specialist.topic {
+                background-color: #5c7b8f;
+            }
+            .core.topic {
+                background-color: #556978;
+            }
+
+            .expert.topic {
+                background-color: #334755;
+            }
+            
+            .cc-heading {
+                background-color: #7CA7B3;
+                color: beige;
+                margin-top: 0px;
+                padding-right: 20px;
+                padding-left: 25px;
+                padding-top:15px;
+                padding-bottom:15px;
+            }
+            
+            .cc-content {
+                background-color: #7CA7B3;
+                color: beige;
+                margin-top: 0px;
+            }
+            span.exam {
+                color: #567794;
+            }
+            
+            .engineering h2, .software h2 {
+                font-size: 11px;
+                font-weight: 600;
+                text-align: center;
+            }
+            .topic h3
+            {
+                text-align: center;
+                font-size: 13px;
+                font-weight: 600;
+                /*
+                filter: drop-shadow(1px 1px 5px black);
+                */
+                color: beige;
+            }
+            .cc-heading h4
+            {
+                text-align: left;
+                font-size: 12px;
+                font-weight: bold;
+                /*
+                filter: drop-shadow(1px 1px 1px #567794);
+                */
+                color: beige;   
+            }
+            .cc-content 
+            {
+                text-align: left;
+                font-size: 10px;
+            }
+            .cc-heading a {
+                color: white;
+            }
+            .cc-heading a:hover {
+                filter: brightness(70%);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+
+                <div id="app">
+
+                    <div class="columns is-multiline is-1-tablet is-1-desktop is-2-widescreen is-2-fullhd">
+
+                            <div class="column is-10">
+                                
+                                <div class="engineering">
+                                    <h2>Engineering Infrastructure</h2>
+                                </div>
+                            <!-- ENTRY STARTS
+                                <div class="columns is-multiline is-mobile">
+                                    
+                                    <div class="column is-full entrycolumn">
+                                        <b-collapse :open="false" aria-id="entry-courses">
+                                            
+                                            <div class="entry topic" 
+                                            slot="trigger"
+                                            aria-controls="entry-courses">
+                                                <h3>    
+                                                    Entry
+                                                </h3>
+                                            </div>
+                                            <div class="columns is-mobile entry courses">
+                                                <div class="column is-half dctech">
+                                                    <div class="entry cc-heading">
+                                                        <h4><a href="https://learningnetworkstore.cisco.com/cisco-certified-technician/supporting-data-center-system-devices-dctech-v3-0-elt-dctech-v3-023565">DCTECH</a></h4>
+                                                        <p class="cc-content">(CCT Data Center)
+                                                            <br><span class="exam">010-151 DCTECH</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="column is-half rstech">
+                                                    <div class="entry cc-heading">
+                                                        <h4><a href="https://learningnetworkstore.cisco.com/cisco-certified-technician/supporting-routing-and-switching-network-devices-rstech-v3-0-elt-rstech-v3-024185">RSTECH</a></h4>
+                                                        <p class="cc-content">(CCT Routing & Switching)
+                                                            <br><span class="exam">100-490 RSTECH</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </b-collapse> 
+                                    </div>
+                                </div>
+                            ENTRY ENDS-->   
+                    
+                                <div class="columns is-multiline is-mobile is-1-tablet is-1-desktop is-2-widescreen is-2-fullhd">
+
+                                    <div class="column is-full ccnacolumn">
+                                        <b-collapse :open="false" aria-id="CCNA-courses">
+                                            
+                                            <div class="associate ccna topic" 
+                                            slot="trigger"
+                                            aria-controls="CCNA-courses">
+                                                <h3>    
+                                                    Associate
+                                                </h3>
+                                            </div>
+                                            <div class="columns is-0-mobile associate courses">
+                                                <div class="column is-10">
+                                                    <div class="associate cc-heading ccnacourse">
+                                                        <h4><a href="https://www.insoftservices.uk/courses/ccna-implementing-and-administering-cisco-solutions/">CCNA</a></h4>
+                                                        <p class="associate ccna cc-content">Implementing and
+                                                            Administering
+                                                            Cisco Solutions
+                                                            <br><span class="exam">5 Days & 200-301 CCNA</span>
+                                                        </p>
+                                                    </div> 
+                                                </div> 
+                                                
+                                                <div class="column is-2">
+                                                    <div class="associate cc-heading crbops">
+                                                        <h4><a href="https://www.insoftservices.uk/courses/secfnd-1-0-understanding-cisco-cybersecurity-fundamentals/">CBROPS</a></h4>
+                                                        <p class="associate ccna cc-content">Understanding Cisco
+                                                            Cybersecurity Operations
+                                                            Fundamentals
+                                                            <br><span class="exam">5 Days & 200-201 CBROPS</span>
+                                                        </p>        
+                                                    </div>  
+                                                </div>
+                                            </div>
+                                        </b-collapse> 
+                                    </div>
+                                </div>
+                        
+                                
+
+
+                                <div class="columns is-multiline is-variable is-1-tablet is-1-desktop is-2-widescreen is-2-fullhd">
+                                    <div class="column is-2 specialist">
+                                        <b-collapse :open="false" aria-id="ENTERSPEC-courses">
+                                                
+                                            <div class="enterprise specialist topic" 
+                                                slot="trigger"
+                                                aria-controls="ENTERSPEC-courses">
+                                                <h3>
+                                                    Enterprise Specialist
+                                                </h3>
+                                            </div>
+                                        
+                                            <div class="enterprise concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/enarsi-implementing-cisco-enterprise-advanced-routing-and-services/">ENARSI</a></h4>
+                                                <p class="enterprise concentration cc-content">
+                                                    Implementing Cisco Enterprise
+                                                    Advanced Routing and Services
+                                                    <br><span class="exam">5 Days & 300-410 ENARSI</span>
+                                                </p>
+                                            </div>
+                                            <div class="enterprise concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/sdwan300-implementing-cisco-sd-wan-solutions/">SDWAN300</a></h4>
+                                                <p class="enterprise concentration cc-content">
+                                                    Implementing Cisco
+                                                    SD-WAN Solutions
+                                                    <br><span class="exam">4 Days & 300-415 ENSDWI</span>
+                                                </p>
+                                            </div>
+                                            <div class="enterprise concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/ensld-designing-cisco-enterprise-networks/">ENSLD</a></h4>
+                                                <p class="enterprise concentration cc-content">
+                                                    Designing Cisco
+                                                    Enterprise Networks
+                                                    <br><span class="exam">5 Days & 300-420 ENSLD</span>
+                                                </p>
+                                            </div>
+                                            <div class="enterprise concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/enwlsd-designing-cisco-enterprise-wireless-networks/">ENWLSD</a></h4>
+                                                <p class="enterprise concentration cc-content">
+                                                    Designing Cisco Enterprise
+                                                    Wireless Networks
+                                                    <br><span class="exam">5 Days & 300-425 ENWLSD</span>
+                                                </p>
+                                            </div>
+                                            <div class="enterprise concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/enwlsi-implementing-cisco-enterprise-wireless-networks/">ENWLSI</a></h4>
+                                                <p class="enterprise concentration cc-content">
+                                                    Implementing Cisco Enterprise
+                                                    Wireless Networks
+                                                    <br><span class="exam">5 Days & 300-430 ENWLSI</span>
+                                                </p>
+                                            </div>
+                                            
+                                            <div class="enterprise concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/enaui-implementing-automation-for-cisco-enterprise-solutions/">ENAUI</a></h4>
+                                                <p class="enterprise concentration cc-content">
+                                                    Implementing Automation
+                                                    for Cisco
+                                                    Enterprise Solutions
+                                                    <br><span class="exam">3 Days & 300-435 ENAUTO</span>
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+
+                                        <b-collapse :open="false" aria-id="ENTERCORE-courses">
+                                                
+                                            <div class="enterprise core topic" 
+                                                slot="trigger"
+                                                aria-controls="ENTERCORE-courses">
+                                                <h3>
+                                                    CCNP Enterprise
+                                                </h3>
+                                            </div>
+                                            <div class="enterprise core cc-heading">
+                                            <h4><a href="https://www.insoftservices.uk/courses/encor-implementing-and-operating-cisco-enterprise-network-core-technologies/">ENCOR</a></h4>
+                                            <p class="enterprise core cc-content">
+                                                Implementing and Operating
+                                                Cisco Enterprise Network
+                                                Core Technologies
+                                                <br><span class="exam">5 Days & 350-401 ENCOR</span>
+                                                
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                        <b-collapse :open="false" aria-id="ENTEREXP-courses">
+                                                
+                                            <div class="enterprise expert topic" 
+                                                slot="trigger"
+                                                aria-controls="ENTEREXP-courses">
+                                                <h3>
+                                                    Enterprise Expert
+                                                </h3>
+                                            </div>
+                                            <div class="enterprise expert cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/ccie-enterprise-infrastructure-bootcamp/">CCIE Enterprise</a></h4>
+                                                <p class="enterprise expert cc-content">
+                                                    <span class="exam"><a href="https://www.insoftservices.uk/courses/ccie-enterprise-infrastructure-bootcamp/">Infrastructure Lab Exam</a></span><br>
+                                                    or<br>
+                                                    <span class="exam">Wireless Lab Exam</span>
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+
+                                    </div>
+                                    <div class="column is-2 specialist">
+
+                                        <b-collapse :open="false" aria-id="SECSPEC-courses">
+                                                
+                                            <div class="security specialist topic" 
+                                                slot="trigger"
+                                                aria-controls="SECSPEC-courses">
+                                                <h3>
+                                                    Security Specialist
+                                                </h3>
+                                            </div>
+                                        
+                                            <div class="security concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/ssngfw-securing-networks-with-cisco-firepower-next-generation-firewall/">SSNGFW</a></h4>
+                                                <p class="security core cc-content">Securing Networks
+                                                    with Cisco Firepower Next
+                                                    Generation Firewall
+                                                    <br><span class="exam">5 Days & 300-710 SNCF</span>
+                                                </p>
+                                            </div>
+                                            <div class="security concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/ssfips-securing-networks-with-cisco-firepower-next-generation-ips/">SSFIPS</a></h4>
+                                                <p class="security core cc-content">Securing Networks
+                                                    with Cisco Firepower
+                                                    Next Generation IPS
+                                                    <br>
+                                                    <span class="exam">5 Days & 300-710 SNCF</span>
+                                                </p>
+                                            </div>
+                                            <div class="security concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/sise-3-0-implementing-and-configuring-cisco-identity-services-engine/">SISE</a></h4>
+                                                <p class="security core cc-content">Implementing
+                                                    and Configuring
+                                                    Cisco Identity
+                                                    Services Engine
+                                                    <br><span class="exam">5 Days & 300-715 SISE</span>
+                                                </p>
+                                            </div>
+                                            <div class="security concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/securing-email-with-cisco-email-security-appliance-sesa-3-0/">SESA</a></h4>
+                                                <p class="security core cc-content">Securing Email
+                                                    with Cisco Email Security
+                                                    Appliances
+                                                    <br><span class="exam">3 Days & 300-720 SESA</span>
+                                                </p>
+                                            </div>
+                                            <div class="security concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/swsa-securing-the-web-with-cisco-web-security-appliance/">SWSA</a></h4>
+                                                <p class="security core cc-content">Securing the Web
+                                                    with Cisco Web
+                                                    Security Appliance
+                                                    <br><span class="exam">2 Days & 300-725 SWSA</span>
+                                                </p>
+                                            </div>
+                                            <div class="security concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/svpn-implementing-secure-solutions-with-virtual-private-networks/">SVPN</a></h4>
+                                                <p class="security core cc-content">Implementing Secure Solutions
+                                                    with
+                                                    Virtual Private Networks
+                                                    <br><span class="exam">5 Days & 300-730 SVPN</span>
+                                                </p>
+                                            </div>
+                                        
+                                            <div class="security concentration cc-heading">
+                                                <h4><a href="#SAUI">SAUI</a></h4>
+                                                <p class="security core cc-content">Implementing Automation
+                                                    for Cisco
+                                                    Security Solutions
+                                                    <br><span class="exam">3 Days & 300-735 SAUTO</span>
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                        <b-collapse :open="false" aria-id="SECCORE-courses">
+                                                
+                                            <div class="security core topic" 
+                                                slot="trigger"
+                                                aria-controls="SECCORE-courses">
+                                                <h3>
+                                                CCNP Security
+                                                </h3>
+                                            </div>
+                                            <div class="security core cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/scor-implementing-and-operating-cisco-security-core-technologies/">SCOR</a></h4>
+                                                <p class="security core cc-content">Implementing and Operating
+                                                    Cisco Security
+                                                    Core Technologies
+                                                    <br><span class="exam">5 Days & 350-701 SCOR</span>
+                                                    
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                        <b-collapse :open="false" aria-id="SECEXP-courses">
+                                                
+                                            <div class="security expert topic" 
+                                                slot="trigger"
+                                                aria-controls="SECEXP-courses">
+                                                <h3>
+                                                Security Expert
+                                                </h3>
+                                            </div>
+                                            <div class="security expert cc-heading">
+                                                <h4>CCIE Security</h4>
+                                                <p class="security expert cc-content">
+                                                    <span class="exam">Lab Exam</span>
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+
+                                    </div>
+                                    
+                                    <div class="column is-2 specialist">
+                                        <b-collapse :open="false" aria-id="COLLABSPEC-courses">
+                                                
+                                            <div class="collaboration specialist topic" 
+                                                slot="trigger"
+                                                aria-controls="COLLABSPEC-courses">
+                                                <h3>
+                                                    Collaboration Specialist
+                                                </h3>
+                                            </div>
+                        
+                                            <div class="collaboration concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/clica-implementing-cisco-collaboration-applications/">CLICA</a></h4>
+                                                <p class="collaboration concentration cc-content">
+                                                    Implementing Cisco
+                                                    Collaboration
+                                                    Applications
+                                                    <br><span class="exam">5 Days & 300-810 CLICA</span>
+                                                </p>
+                                            </div>
+                                            <div class="collaboration concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/claccm-implementing-cisco-advanced-call-control-and-mobility-services/">CLACCM</a></h4>
+                                                <p class="collaboration concentration cc-content">
+                                                    Implementing
+                                                    Cisco Advanced Call Control
+                                                    and
+                                                    Mobility Services
+                                                    <br><span class="exam">5 Days & 300-815 CLACCM</span>
+                                                </p>
+                                            </div>
+                                            <div class="collaboration concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/clcei-implementing-cisco-collaboration-cloud-and-edge-solutions/">CLCEI</a></h4>
+                                                <p class="collaboration concentration cc-content">
+                                                    Implementing Cisco
+                                                    Collaboration Cloud
+                                                    and Edge Solutions
+                                                    <br><span class="exam">5 Days & 300-820 CLCEI</span>
+                                                </p>
+                                            </div>
+                                            <div class="collaboration concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/claui-implementing-automation-for-cisco-collaboration-solutions/">CLAUI</a></h4>
+                                                <p class="collaboration concentration cc-content">
+                                                    Implementing Automation
+                                                    for Cisco
+                                                    Collaboration Solutions
+                                                    <br><span class="exam">3 Days & 300-835 CLAUTO</span>
+                                                </p>
+                                            </div>  
+                                        </b-collapse>
+                                        <b-collapse :open="false" aria-id="COLLABCORE-courses">
+                                                
+                                            <div class="collaboration core topic" 
+                                                slot="trigger"
+                                                aria-controls="COLLABCORE-courses">
+                                                <h3>
+                                                CCNP Collaboration
+                                                </h3>
+                                            </div>
+                                            <div class="collaboration core cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/clcor-implementing-and-operating-cisco-collaboration-core-technologies/">CLCOR</a></h4>
+                                                <p class="collaboration core cc-content">
+                                                    Implementing and Operating
+                                                    Cisco Collaboration
+                                                    Core Technologies
+                                                    <br><span class="exam">5 Days & 350-801 CLCOR</span>
+                                                    
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                        <b-collapse :open="false" aria-id="COLLABEXP-courses">
+                                                
+                                            <div class="collaboration expert topic" 
+                                                slot="trigger"
+                                                aria-controls="COLLABEXP-courses">
+                                                <h3>
+                                                Collaboration Expert
+                                                </h3>
+                                            </div>
+                                            <div class="collaboration expert cc-heading">
+                                                <h4>CCIE Collaboration</h4>
+                                                <p class="collaboration expert cc-content">
+                                                    <span class="exam">Lab Exam</span>
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                    </div>
+                                    <div class="column is-2 specialist">
+                                        <b-collapse :open="false" aria-id="SPSPEC-courses">
+                                                
+                                            <div class="service-provider specialist topic" 
+                                                slot="trigger"
+                                                aria-controls="SPSPEC-courses">
+                                                <h3>
+                                                    Service Provider Specialist
+                                                </h3>
+                                            </div>
+                                
+                                            <div class="service-provider concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/spri-implementing-cisco-service-provider-advanced-routing-solutions/">SPRI</a></h4>
+                                                <p class="service-provider concentration cc-content">
+                                                    Implementing Cisco
+                                                    Service Provider Advanced
+                                                    Routing Solutions
+                                                    <br><span class="exam">5 Days & 300-510 SPRI</span>
+                                                </p>
+                                            </div>
+                                            <div class="service-provider concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/svpi-implementing-cisco-service-provider-vpn-services/">SPVI</a></h4>
+                                                <p class="service-provider concentration cc-content">
+                                                    Implementing Cisco
+                                                    Service Provider
+                                                    VPN Services
+                                                    <br><span class="exam">5 Days & 300-515 SPVI</span>
+                                                </p>
+                                            </div>
+                                            <div class="service-provider concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/spaui-implementing-automation-for-cisco-service-provider-solutions/">SPAUI</a></h4>
+                                                <p class="service-provider concentration cc-content">
+                                                    Implementing Automation
+                                                    for Cisco Service
+                                                    Provider Solutions
+                                                    <br><span class="exam">3 Days & 300-535 SPAUTO</span>
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                        <b-collapse :open="false" aria-id="SPCORE-courses">
+                                                
+                                            <div class="service-provider core topic" 
+                                                slot="trigger"
+                                                aria-controls="SPCORE-courses">
+                                                <h3>
+                                                    CCNP Service Provider
+                                                </h3>
+                                            </div>
+                                            <div class=" service-provider core cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/spcor-implementing-and-operating-cisco-service-provider-network-core-technologies/">SPCOR</a></h4>
+                                                <p class="service-provider core cc-content">
+                                                    Implementing and Operating
+                                                    Cisco Service Provider Network
+                                                    Core Technologies
+                                                    <br><span class="exam">5 Days & 350-501 SPCOR</span>
+                                                    
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                        <b-collapse :open="false" aria-id="SPEXP-courses">
+                                                
+                                            <div class="service-provider expert topic" 
+                                                slot="trigger"
+                                                aria-controls="SPEXP-courses">
+                                                <h3>
+                                                    Service Provider Expert
+                                                </h3>
+                                            </div>
+                                            <div class="service-provider expert cc-heading">
+                                                <h4>CCIE Service Provider</h4>
+                                                <p class="service-provider expert cc-content">
+                                                    <span class="exam">Lab Exam</span>
+                                                </p>
+                                            </div>
+                                        </b-collapse> 
+
+                                    </div>
+                                    <div class="column is-2 specialist">
+                                        <b-collapse :open="false" aria-id="DCSPEC-courses">
+                                                
+                                            <div class="data-center specialist topic" 
+                                                slot="trigger"
+                                                aria-controls="DCSPEC-courses">
+                                                <h3>
+                                                    Data Center Specialist
+                                                </h3>
+                                            </div>
+
+                                            <div class="data-center concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/designing-cisco-data-center-infrastructure/">DCID</a></h4>
+                                                <p class="data-center concentration cc-content">
+                                                    Designing Cisco
+                                                    Data Center Infrastructure
+                                                    <br><span class="exam">5 Days & 300-610 DCID</span>
+                                                </p>
+                                            </div>
+                                            <div class="data-center concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/dcit-troubleshooting-cisco-data-center-infrastructure/">DCIT</a></h4>
+                                                <p class="data-center concentration cc-content">
+                                                    Troubleshooting Cisco Data
+                                                    Center Infrastructure
+                                                    <br><span class="exam">5 Days & 300-615 DCIT</span>
+                                                </p>
+                                            </div>
+                                            <div class="data-center concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/implementing-cisco-application-centric-infrastructure-dcaci-v1-0/">DCACI</a></h4>
+                                                <p class="data-center concentration cc-content">
+                                                    Implementing Cisco Application
+                                                    Centric Infrastructure
+                                                    <br><span class="exam">5 Days & 300-620 DCACI</span>
+                                                </p>
+                                            </div>
+                                            <div class="data-center concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/configuring-cisco-mds-9000-series-switches-dcmds-3-1/">DCMDS</a></h4>
+                                                <p class="data-center concentration cc-content">
+                                                    Configuring Cisco
+                                                    MDS 9000 Switches
+                                                    <br><span class="exam">4 Days & 300-625 DCSAN</span>
+                                                </p>
+                                            </div>
+                                            <div class="data-center concentration cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/dcaui-implementing-automation-for-cisco-data-center-solutions/">DCAUI</a></h4>
+                                                <p class="data-center concentration cc-content">
+                                                    Implementing
+                                                    Automation for
+                                                    Cisco Data Center
+                                                    Solutions
+                                                    <br><span class="exam">3 Days & 300-635 DCAUTO</span>
+                                                </p>
+                                            </div>
+                                            <div class="data-center concentration cc-heading">
+                                                <h4><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/dcacia-600-660.html">DCACIA</a></h4>
+                                                <p class="data-center concentration cc-content">
+                                                    Implementing Cisco 
+                                                    Application Centric 
+                                                    Infrastructure - Advanced
+                                                    <br><span class="exam">5 Days & 600-660 DCACIA</span>
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                        <b-collapse :open="false" aria-id="DCCORE-courses">
+                                                
+                                            <div class="data-center core topic" 
+                                                slot="trigger"
+                                                aria-controls="DCCORE-courses">
+                                                <h3>
+                                                CCNP Data Center
+                                                </h3>
+                                            </div>    
+                                            <div class=" data-center core cc-heading">
+                                                <h4><a href="https://www.insoftservices.uk/courses/dccor-implementing-and-operating-cisco-data-center-core-technologies/">DCCOR</a></h4>
+                                                <p class="data-center core cc-content">
+                                                    Implementing and Operating
+                                                    Cisco Data Center
+                                                    Core Technologies
+                                                    <br><span class="exam">5 Days & 350-601 DCCOR</span>
+                                                    
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                        <b-collapse :open="false" aria-id="DCEXP-courses">
+                                                
+                                            <div class="data-center expert topic" 
+                                                slot="trigger"
+                                                aria-controls="DCEXP-courses">
+                                                <h3>
+                                                    Data Center Expert
+                                                </h3>
+                                            </div>   
+                                            <div class="data-center expert cc-heading">
+                                                <h4>CCIE Data Center</h4>
+                                                <p class="data-center expert cc-content">
+                                                    <span class="exam">Lab Exam</span>
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                    </div> <!-- specialist column ends here -->
+
+                                    <div class="column is-2 specialist">
+                                        <b-collapse :open="false" aria-id="COSPEC-courses">
+                                                
+                                            <div class="cyberops specialist topic" 
+                                                slot="trigger"
+                                                aria-controls="COSPEC-courses">
+                                                <h3>
+                                                    CyberOps Specialist
+                                                </h3>
+                                                <p class="incoming">Available November</p>
+                                            </div>
+
+                                            <div class="data-center concentration cc-heading">
+                                                <h4><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/300-210-cbrfir.html">CBRFIR</a></h4>
+                                                <p class="data-center concentration cc-content">
+                                                    Conducting Forensic 
+                                                    Analysis and Incident 
+                                                    Response Using Cisco 
+                                                    Technologies for CyberOps
+                                                    <br><span class="exam">5 Days & 300-210 CBRFIR</span>
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                        <b-collapse :open="false" aria-id="COCORE-courses">
+                                                
+                                            <div class="cyberops core topic" 
+                                                slot="trigger"
+                                                aria-controls="COCORE-courses">
+                                                <h3>
+                                                CCNP CyberOps
+                                                </h3>
+                                                <p class="incoming">Available November</p>
+                                            </div>    
+                                            <div class="cyberops core cc-heading">
+                                                <h4><a href="https://www.cisco.com/c/en/us/training-events/training-certifications/exams/current-list/350-201-cbrcor.html">CBRCOR</a></h4>
+                                                <p class="cyberops core cc-content">
+                                                    Performing CyberOps 
+                                                    Using Cisco Security 
+                                                    Technologies
+                                                    <br><span class="exam">5 Days & 350-201 CBRCOR</span>
+                                                    
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                        <!--
+                                        <b-collapse :open="false" aria-id="DCEXP-courses">
+                                                
+                                            <div class="data-center expert topic" 
+                                                slot="trigger"
+                                                aria-controls="DCEXP-courses">
+                                                <h3>
+                                                    CyberOps Expert
+                                                </h3>
+                                            </div>
+                                            <div class="data-center expert cc-heading">
+                                                <h4>CCIE CyberOps</h4>
+                                                <p class="data-center expert cc-content">
+                                                    <span class="exam">Lab Exam</span>
+                                                </p>
+                                            </div>
+                                        </b-collapse>
+                                    -->
+                                    </div> <!-- specialist column ends here -->
+                                </div><!-- specialist columns ends here -->
+                            </div><!-- engineering column ends here -->
+
+                            <div class="column is-2">
+                                <div class="software">
+                                    <h2>Software</h2>
+                                </div>
+                                <b-collapse :open="false" aria-id="DEVNETA-courses">
+                                                
+                                    <div class="devnet associate topic" 
+                                        slot="trigger"
+                                        aria-controls="DEVNETA-courses">
+                                        <h3>
+                                        DEVNET Associate
+                                        </h3>
+                                    </div>
+                                    <div class="devnet associate cc-heading">
+                                        <h4><a href="https://www.insoftservices.uk/courses/devasc-developing-applications-and-automating-workflows-using-cisco-core-platforms/">DEVASC</a></h4>
+                                        <p class="devnet associate cc-content">
+                                            Developing Applications and
+                                            Automating Workflows using
+                                            Cisco Platforms
+                                            <br><span class="exam">5 Days & 200-901 DEVASC</span>
+                                        </p>
+                                    </div>
+                                </b-collapse>
+                                <b-collapse :open="false" aria-id="DEVNETS-courses">
+                                                
+                                    <div class="devnet specialist topic" 
+                                        slot="trigger"
+                                        aria-controls="DEVNETS-courses">
+                                        <h3>
+                                            Devnet Specialist
+                                        </h3>
+                                    </div>
+                                    <div class=" devnet concentration cc-heading">
+                                        <h4><a href="#C-DEVOPS">C-DEVOPS</a></h4>
+                                        <p class="devnet concentration cc-content">
+                                            Implementing DevOps Solutions
+                                            and Practices using
+                                            Cisco Platforms
+                                            <br><span class="exam">5 Days & 300-910 DEVOPS</span>
+                                        </p>
+                                    </div>
+                                    <div class=" devnet concentration cc-heading">
+                                        <h4><a href="https://www.insoftservices.uk/courses/deviot-developing-solutions-using-cisco-iot-and-edge-platforms/">DEVIOT</a></h4>
+                                        <p class="devnet concentration cc-content">
+                                            Developing Solutions using
+                                            Cisco IoT & Edge Platforms
+                                            <br><span class="exam">5 Days & 300-915 DEVIOT</span>
+                                        </p>
+                                    </div>
+                                    <div class=" devnet concentration cc-heading">
+                                        <h4><a href="https://www.insoftservices.uk/courses/devwbx-developing-applications-for-cisco-webex-and-webex-devices/">DEVWBX</a></h4>
+                                        <p class="devnet concentration cc-content">    
+                                            Developing Applications for
+                                            Cisco Webex and Webex Devices
+                                            <br><span class="exam">5 Days & 300-920 DEVWBX</span>
+                                        </p>    
+                                    </div>
+                                    <div class=" devnet concentration cc-heading">
+                                        <h4><a href="https://www.insoftservices.uk/courses/enaui-implementing-automation-for-cisco-enterprise-solutions/">ENAUI</a></h4>
+                                        <p class="devnet concentration cc-content">
+                                            Implementing Automation
+                                            for Cisco Enterprise Solutions
+                                            <br><span class="exam">3 Days & 300-435 ENAUTO</span>
+                                        </p>
+                                    </div>
+                                    <div class=" devnet concentration cc-heading">
+                                        <h4><a href="https://www.insoftservices.uk/courses/spaui-implementing-automation-for-cisco-service-provider-solutions/">SPAUI</a></h4>
+                                        <p class="devnet concentration cc-content">
+                                            Implementing Automation
+                                            for Cisco Service
+                                            Provider Solutions
+                                            <br><span class="exam">3 Days & 300-535 SPAUTO</span>
+                                        </p>
+                                    </div>
+                                    <div class=" devnet concentration cc-heading">
+                                        <h4><a href="https://www.insoftservices.uk/courses/dcaui-implementing-automation-for-cisco-data-center-solutions/">DCAUI</a></h4>
+                                        <p class="devnet concentration cc-content">
+                                            Implementing Automation for
+                                            Cisco Data Center Solutions
+                                            <br><span class="exam">3 Days & 300-635 DCAUTO</span>
+                                        </p>
+                                    </div>
+                                    <div class=" devnet concentration cc-heading">
+                                        <h4><a href="#SAUI">SAUI</a></h4>
+                                        <p class="devnet concentration cc-content">
+                                            Implementing Automation
+                                            for Cisco Security Solutions
+                                            <br><span class="exam">3 Days & 300-735 SAUTO</span>
+                                        </p>
+                                    </div>
+                                    
+                                    <div class=" devnet concentration cc-heading">
+                                        <h4><a href="https://www.insoftservices.uk/courses/claui-implementing-automation-for-cisco-collaboration-solutions/">CLAUI</a></h4>
+                                        <p class="devnet concentration cc-content">
+                                            Implementing Automation for
+                                            Cisco Collaboration Solutions
+                                            <br><span class="exam">3 Days & 300-835 CLAUTO</span>
+                                        </p>
+                                    </div>
+                                    
+                                </b-collapse>
+                                <b-collapse :open="false" aria-id="DEVNETC-courses">
+                                                
+                                    <div class="devnet core topic" 
+                                        slot="trigger"
+                                        aria-controls="DEVNETC-courses">
+                                        <h3>
+                                        CCNP DevNet
+                                        </h3>
+                                    </div> 
+                                    <div class=" devnet core cc-heading">
+                                        <h4><a href="https://www.insoftservices.uk/courses/devcor-developing-applications-using-cisco-core-platforms-and-apis/">DEVCOR</a></h4>
+                                        <p class="devnet core cc-content">
+                                            Developing Applications
+                                            using
+                                            Cisco Platforms and APIs
+                                            <br><span class="exam">5 Days & 350-901 DEVCOR</span>
+                                            
+                                        </p>
+                                    </div>
+                                </b-collapse>
+                                <b-collapse :open="false" aria-id="DEVNETA-courses">
+                                                
+                                    <div class="devnet expert topic" 
+                                        slot="trigger"
+                                        aria-controls="DEVNETE-courses">
+                                        <h3>
+                                        DevNet Expert
+                                        </h3>
+                                    </div> 
+                                    <div class="devnet expert cc-heading">
+                                        <h4>CCIE DevNet</h4>
+                                        <p class="data-center expert cc-content">
+                                            <br><span class="exam">Available in future</span>
+                                        </p>
+                                    </div>
+                                </b-collapse>
+                            </div><!--End software column-->
+                        </div> <!--End main columns-->
+                    </div> <!--End vuejs-->
+                </div> <!--End container-->
+        </section>
+        <!-- Full bundle vue and buefy CDN -->
+        <!-- todo: host vue and buefy without CDN-->
+        <script src="https://unpkg.com/vue"></script>
+        <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script>
+        <script>
+            new Vue({
+            el: '#app',
+            data: {
+                isOpen: true
+            }
+            })
+        </script>
+    </body>
+</html>
